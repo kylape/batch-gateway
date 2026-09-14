@@ -154,6 +154,9 @@ func TestDispatcher(t *testing.T) {
 	t.Run("BatchAPIDispatchGate", func(t *testing.T) {
 		testBatchAPIDispatchGate(t, rdb)
 	})
+	t.Run("BatchAPIHardKillRecovery", func(t *testing.T) {
+		testBatchAPIHardKillRecovery(t, rdb)
+	})
 	t.Run("EndpointScrapeGate", func(t *testing.T) {
 		testDispatcherEndpointScrapeGate(t, rdb)
 	})
